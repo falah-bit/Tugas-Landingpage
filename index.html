@@ -1,0 +1,140 @@
+<!--
+* ==================================
+* Nama  : Muhammad Najmul Falah
+* Nim   : 202451043
+* Kelas : B
+* ==================================
+-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <label class="logo">Falah</label>
+            <div id="menu-icon" class="menu-icon">
+                <i class="ph ph-list"></i> 
+            </div>
+            <ul id="nav-hidden" class="nav-links" >
+                <li>
+                    <a class="active" href="#home">Beranda</a>
+                </li>
+                <li>
+                    <a href="#about">Tentang</a>
+                </li>
+                <li>
+                    <a href="#services">Layanan</a>
+                </li>
+                <li>
+                    <a href="#contact">Kontak</a>
+                </li>
+            </ul> 
+        </nav>        
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Selamat Datang di Pelatihan HTML</h1>
+                <p>Mari belajar membuat website sederhana dengan HTML dasar.</p>
+                <button class="button">Mulai Belajar</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Tentang Kami</h2>
+            <p>Kami penyedia pelatihan pemrograman web untuk pemula yang ingin memulai karir di bidang teknologi.</p>
+            <div class="about-features">
+                <div class="about-features-1">
+                    <h3>Mudah Dipahami</h3>
+                    <p>Materi disampaikan dengan bahasa yang sederhana.</p>
+                </div>
+                <div class="about-features-2">
+                    <h3>Praktik Langsung</h3>
+                    <p>Belajar sambil langsung mempraktikkan kode.</p>
+                </div>
+                <div class="about-features-3">
+                    <h3>Gratis</h3>
+                    <p>Tidak ada biaya untuk pelatihan dasar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Layanan Kami</h2>
+            <div class="service-cards">
+                <div class="service-cards-1">
+                    <h3>HTML Dasar</h3>
+                    <p>Belajar struktur dasar HTML.</p>
+                </div>
+                <div class="service-cards-2">
+                    <h3>Form HTML</h3>
+                    <p>Membuat form interaktif.</p>
+                </div>
+                <div class="service-cards-3">
+                    <h3>Tabel HTML</h3>
+                    <p>Mengatur data dalam tabel.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimoni">
+            <h2>Apa Kata Peserta</h2>
+            <div class="testimoni-cards">
+                
+                <div class="testimoni-cards-1">
+                    <div class="testimoni-photo-1">
+                        <img src="castorice.jpeg" class="photo" alt="castorice">
+                        <p>"Pelatihannya sangat mudah dipahami untuk pemula seperti saya."</p>
+                        <strong>- Falah, Mahasiswa</strong>
+                    </div>
+                </div>
+                <div class="testimoni-cards-2">
+                    <div class="testimoni-photo2">
+                        <img src="firefly.jpeg" class="photo" alt="firefly">
+                        <p>"Terimakasih untukmu"</p>
+                        <strong>- Firefly, Waifu</strong>
+                    </div>
+                </div>
+                <div class="testimoni-cards-3">
+                    <div class="testimoni-photo-3">
+                        <img src="kafka.jpeg" class="photo" alt="">
+                        <p>"Materinya praktis dan langsung bisa diaplikasikan."</p>
+                        <strong>- Kafka, Guru</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Hubungi Kami</h2>
+            <p>Email: info@pelatihanhtml.com</p>
+            <p>Telepon: (021) 123-4567</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Pelatihan HTML Dasar. Semua hak dilindungi.</p>
+    </footer>
+    <!-- Untuk interaksi tombol togle-->
+    <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const menuList =document.getElementById("nav-hidden");
+
+        menuIcon.addEventListener("click", () => {
+            menuList.classList.toggle("nav-links");
+        })
+        
+    </script>
+</body>
+</html>

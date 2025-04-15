@@ -1,0 +1,267 @@
+/* 
+* ==================================
+* Nama  : Muhammad Najmul Falah
+* Nim   : 202451043
+* Kelas : B
+* Font Menggunakan Google Font 
+* Font: Poppins
+* ==================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eaf1f8;
+    line-height: 1.6;
+    color: #1b263b;
+}
+
+/* ===== HEADER & NAVIGATION ===== */
+header {
+    background-color: rgba(13, 27, 42, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all 0.5s ease;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 2rem;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1 rem;
+}
+li a {
+    position: relative;
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 2px;
+}
+li a:hover {
+    color: #4a90e2;
+}
+li a::before {
+    content: '';
+    position: absolute;
+    background: #4a90e2;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+li a:hover::before {
+    width: 100%;
+}
+.menu-icon {
+    font-size: 28px;
+    color: #ffffff;
+    display: none;
+    align-items: center;
+}
+.button {
+    background-color:#4a90e2;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color:#1b74d2;
+}
+.hero {
+    background-color: #f5faff;
+    color: #0d1b2a;
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+.hero-content {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+}
+.hero-content h1 {
+    
+    font-size: 2rem;
+    color: #0d1b2a;
+}
+.hero-content p {
+    
+    font-size: 1.2rem;
+}
+.about {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f5faff;
+}
+.services {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f5faff;
+    
+} 
+.testimoni {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color:#f5faff;
+    z-index: 999;
+}
+.contact {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color:#ffffff;
+}
+.about h2, 
+.services h2, 
+.testimoni h2, 
+.contact h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: rgb(29, 57, 95);
+}
+.about-features,
+.service-cards,
+.testimoni-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+.about-features div,
+.service-cards div{
+    flex: 1;
+    min-width: 200px;
+    border: 1px solid black;
+    background-color: #fafaff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: inline-flexbox;
+    transition: transform 0.3s,box-shadow 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.testimoni-cards-1,
+.testimoni-cards-2,
+.testimoni-cards-3{
+    flex: 1;
+    min-width: 200px;
+    border: 1px solid black;
+    background-color: #fafaff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: inline-flexbox;
+    transition: transform 0.3s;
+}
+.testimoni-photo-1,
+.testimoni-photo-2,
+.testimoni-photo-3{
+    border: 1px white;
+}
+.photo {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 5s ease;
+    clip-path: circle();
+    object-position: center;
+    position: auto;
+}
+.about-features-1:hover,
+.about-features-2:hover,
+.about-features-3:hover,
+.service-cards-1:hover,
+.service-cards-2:hover,
+.service-cards-3:hover,
+.testimoni-cards-1:hover,
+.testimoni-cards-2:hover,
+.testimoni-cards-3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(13, 47, 32, 10);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0d1b2a;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu-icon {
+        display: flex;
+        align-items: center;
+    }
+    nav ul.nav-links {
+        display: none;
+
+    }
+    nav ul li {
+        list-style: none;
+    }
+    .hero {
+        flex-direction: column;
+        padding-top: 6rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .about-features,
+    .service-cards,
+    .testimoni-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-features div,
+    .service-cards div,
+    .testimoni-cards div {
+        width: 100%;
+    }
+}
